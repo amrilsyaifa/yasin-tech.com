@@ -1,0 +1,199 @@
+{
+  "Auth": {
+    "hello": "Hello world!",
+    "translation": {
+      "en": "english",
+      "id": "indonesia"
+    },
+    "navbar": {
+      "top_navbar": {
+        "auth": {
+          "help": "help",
+          "contact": "contact us",
+          "home": "home"
+        },
+        "home": {
+          "home": "home",
+          "products": "products",
+          "articles": "articles",
+          "about": "about",
+          "contact": "contact",
+          "sign_in": "sign in"
+        }
+      }
+    },
+    "pages": {
+      "login": {
+        "welcome": "Welcome Back!",
+        "dont_have_account": "Don't have an account,",
+        "sign_up": "Sign up",
+        "remember_me": "Remember me",
+        "forget_password": "Forget password?",
+        "label_email": "Your email",
+        "label_password": "Your password",
+        "submit": "Submit",
+        "continue_with": "or continue with",
+        "toast": {
+          "success": "Login Success",
+          "error": "Login Failed"
+        }
+      },
+      "register": {
+        "create_account": "Create an account",
+        "have_account": "Already have an account,",
+        "sign_in": "Sign in",
+        "label_email": "Enter your email",
+        "label_password": "Enter your password",
+        "label_confirm_password": "Enter your confirmation password",
+        "label_username": "Enter your username",
+        "label_phone_number": "Enter your phone number",
+        "label_first_name": "Enter your first name",
+        "label_last_name": "Enter your last name",
+        "submit": "Submit",
+        "sign_up": "Sign Up",
+        "continue_with": "or continue with",
+        "toast": {
+          "success": "Register Success",
+          "error": "Register Failed"
+        }
+      },
+      "logout": {
+        "toast": {
+          "success": "Logout Success",
+          "error": "Logout Failed"
+        }
+      },
+      "forgot_password": {
+        "forgot_password": "Forgot Password",
+        "description": "Opps, don't worry our team will help you to login again, Input your email address to fix this issue.",
+        "label_email": "Enter your email",
+        "submit": "Send"
+      },
+      "home": {
+        "hero": {
+          "title": "Digital Innovation with",
+          "description": "Accelerate digital innovation through enterprise captive & potential market. Our mission is helping enterprise to leverage existing market, people, and resources to create breakthrough digital product, faster.",
+          "discover": "Discover"
+        },
+        "feature": {
+          "title": "We help you to unlock the true potential of your business with our modern, secure, and reliable solutions.",
+          "description": "You can explore the features that we provide with fun and have their own functions each feature.",
+          "list": {
+            "1": "Web Development",
+            "2": "Mobile Development",
+            "3": "UI/UX Design",
+            "4": "CCTV & IT Solution",
+            "5": "Network Solution",
+            "6": "24/7 Support Service"
+          }
+        },
+        "show_case": {
+          "title": "OUR ENGAGEMENT",
+          "description": "Show Case"
+        },
+        "insight": {
+          "title": "Insights",
+          "description": "Be Informed, Be Inspired"
+        },
+        "call_support": {
+          "message": "Hi Yasin Tech, I want to consultation"
+        }
+      },
+      "articles": {
+        "hero": {
+          "title": "Relax yourself",
+          "description": "On this blog I share tips and tricks, frameworks, projects, tutorials, etc Make sure you login to get the latest updates",
+          "start_reading": "Start reading"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "common": {
+      "dashboard": "Home",
+      "content": "Content",
+      "profile": "Profile",
+      "settings": "Settings",
+      "sign_out": "Sign Out",
+      "create": "Create",
+      "edit": "Edit",
+      "testimony": "Testimony"
+    },
+    "content": {
+      "empty_state": {
+        "title": "No Results",
+        "description": "Sorry, there are no results to display. Please create data first"
+      },
+      "create": {
+        "title": "Create",
+        "write": "Write",
+        "form": {
+          "title": "Title...",
+          "description": "Description...",
+          "preview": "Preview",
+          "save": "Save",
+          "publish": "Publish"
+        },
+        "toast": {
+          "success": "Create data success",
+          "error": "Create data Failed"
+        }
+      },
+      "edit": {
+        "title": "Edit",
+        "toast": {
+          "success": "Update data success",
+          "error": "Update data Failed"
+        }
+      }
+    },
+    "testimony": {
+      "create": {
+        "form": {
+          "full_name": "Full Name",
+          "company": "Company",
+          "job_title": "Job Title",
+          "desc_id": "Description (ID)",
+          "desc_en": "Description (EN)",
+          "rating": "Rating",
+          "placeholder_desc": "Write your thoughts here...",
+          "save": "Save",
+          "publish": "Publish"
+        },
+        "toast": {
+          "success": "Create data success",
+          "error": "Create data Failed"
+        }
+      },
+      "edit": {
+        "toast": {
+          "success": "Update data success",
+          "error": "Update data Failed"
+        }
+      }
+    }
+  },
+  "Components": {
+    "coming_soon": {
+      "title": "Coming Soon",
+      "description": "Notify me when it's ready",
+      "subscribe": "Subscribe"
+    },
+    "modal": {
+      "modal_editor": {
+        "cancel": "Cancel",
+        "ok": "Insert"
+      }
+    },
+    "rich_editor": {
+      "error_upload_image": "Have an error uploading image"
+    }
+  },
+  "LocaleLayout": {
+    "title": "Yasin Tech",
+    "company": "PT. Yasin Tech Indonesia",
+    "address": "Jl. Sei mencirim, Medan, Nort Sumatera",
+    "description": "Website Development Services, Android Development Services,and CCTV & IT Solution",
+    "meaning": "was formed in 2015 as IT solution company for business. Our aim is to provide affordable service and become a reliable partner for our client in achieving their business goals."
+  }
+}

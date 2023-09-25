@@ -1,0 +1,72 @@
+[
+  {
+    "status": "publish",
+    "slug": "react-native",
+    "name": "React Native"
+  },
+  {
+    "status": "publish",
+    "slug": "reactjs",
+    "name": "React"
+  },
+  {
+    "status": "publish",
+    "slug": "devops",
+    "name": "Devops"
+  },
+  {
+    "status": "publish",
+    "slug": "nodejs",
+    "name": "Nodejs"
+  },
+  {
+    "status": "publish",
+    "slug": "docker",
+    "name": "Docker"
+  },
+  {
+    "status": "publish",
+    "slug": "golang",
+    "name": "Golang"
+  },
+  {
+    "status": "publish",
+    "slug": "general",
+    "name": "General"
+  },
+  {
+    "status": "publish",
+    "slug": "network",
+    "name": "Network"
+  },
+  {
+    "status": "publish",
+    "slug": "git",
+    "name": "Git"
+  },
+  {
+    "status": "publish",
+    "slug": "ci/cd",
+    "name": "CI/CD"
+  },
+  {
+    "status": "publish",
+    "slug": "ui/ux",
+    "name": "UI/UX"
+  },
+  {
+    "status": "publish",
+    "slug": "figma",
+    "name": "Figma"
+  },
+  {
+    "status": "publish",
+    "slug": "english",
+    "name": "English"
+  },
+  {
+    "status": "publish",
+    "slug": "indonesia",
+    "name": "Indonesia"
+  }
+]

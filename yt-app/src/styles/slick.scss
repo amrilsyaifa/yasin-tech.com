@@ -1,0 +1,15 @@
+/*! purgecss start ignore */
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+/*! purgecss end ignore*/
+
+/* Slideshow */
+.slick-dots li {
+  @apply inline-block;
+}
+.slick-dots span {
+  @apply bg-white;
+}
+.slick-dots .slick-active span {
+  @apply w-12 rounded-l-full rounded-r-full bg-yt-blue-600;
+}

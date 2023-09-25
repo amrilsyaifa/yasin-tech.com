@@ -1,0 +1,94 @@
+version: '3.8'
+
+services:
+  mongo:
+    restart: unless-stopped
+    build:
+      context: .
+      dockerfile: ./docker/mongodb_replica_set/Dockerfile
+    env_file: ./.env
+    container_name: mongo
+    environment:
+      MONGO_INITDB_DATABASE: ${MONGODB_INIT_DATABASE}
+      MONGO_INITDB_ROOT_USERNAME: ${MONGODB_INIT_ROOT_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${MONGODB__INIT_ROOT_PASSWORD}
+      MONGO_REPLICA_HOST: $MONGO_REPLICA_HOST
+      MONGO_REPLICA_PORT: '$MONGODB_DOCKER_PORT'
+    ports:
+      - '0.0.0.0:$MONGODB_DOCKER_PORT:$MONGODB_DOCKER_PORT'
+    networks:
+      - node-webapp-network
+    volumes:
+      - type: volume
+        source: MONGO_DATA
+        target: /data/db
+      - type: volume
+        source: MONGO_CONFIG
+        target: /data/configdb
+
+  mongo-express:
+    restart: unless-stopped
+    image: mongo-express:latest
+    container_name: mongo-express
+    env_file: ./.env
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: $MONGODB_INIT_ROOT_USER
+      ME_CONFIG_MONGODB_ADMINPASSWORD: $MONGODB__INIT_ROOT_PASSWORD
+      ME_CONFIG_MONGODB_SERVER: mongo
+      ME_CONFIG_MONGODB_PORT: $MONGODB_DOCKER_PORT
+    ports:
+      - '0.0.0.0:$MONGODB_EXPRESS_DOCKER_PORT:$MONGODB_EXPRESS_DOCKER_PORT'
+    networks:
+      - node-webapp-network
+    depends_on:
+      - mongo
+
+  app-dev:
+    depends_on:
+      - mongo
+    build:
+      context: .
+      dockerfile: ./docker/development/Dockerfile
+    container_name: app-dev
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - '/app/node_modules'
+      - /app/.next
+    networks:
+      - node-webapp-network
+
+  app-prod:
+    depends_on:
+      - mongo
+    build:
+      context: .
+      dockerfile: ./docker/production/Dockerfile
+    container_name: app-prod
+    ports:
+      - '3000:3000'
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    networks:
+      - node-webapp-network
+    deploy:
+      resources:
+        limits:
+          cpus: '2'
+          memory: 512M
+        reservations:
+          cpus: '0.25'
+          memory: 64M
+
+networks:
+  node-webapp-network:
+    driver: bridge
+
+volumes:
+  MONGO_DATA:
+    name: MONGO_DATA
+  MONGO_CONFIG:
+    name: MONGO_CONFIG

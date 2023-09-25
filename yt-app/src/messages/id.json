@@ -1,0 +1,195 @@
+{
+  "Auth": {
+    "hello": "Hallo dunia!",
+    "translation": {
+      "en": "English",
+      "id": "Indonesia"
+    },
+    "navbar": {
+      "top_navbar": {
+        "auth": {
+          "help": "bantuan",
+          "contact": "hubungi kami",
+          "home": "beranda"
+        },
+        "home": {
+          "home": "Beranda",
+          "products": "produk",
+          "articles": "Artikel",
+          "about": "Tentang Kami",
+          "contact": "Kontak",
+          "sign_in": "masuk"
+        }
+      }
+    },
+    "pages": {
+      "login": {
+        "welcome": "Selamat Datang!",
+        "dont_have_account": "Belum punya akun,",
+        "sign_up": "Daftar",
+        "remember_me": "Ingatkan saya",
+        "forget_password": "Lupa password?",
+        "label_email": "Email kamu",
+        "label_password": "Password kamu",
+        "submit": "Proses",
+        "continue_with": "atau menggunakan",
+        "toast": {
+          "success": "Berhasil Masuk",
+          "error": "Gagal Masuk"
+        }
+      },
+      "register": {
+        "create_account": "Buat akun",
+        "have_account": "Sudah punya akun,",
+        "sign_in": "Masuk",
+        "label_email": "Masukkan email",
+        "label_password": "Masukkan password",
+        "label_confirm_password": "Masukkan password konfirmasi",
+        "label_username": "Masukkan username",
+        "label_first_name": "Masukkan nama depan",
+        "label_last_name": "Masukkan nama akhir",
+        "label_phone_number": "Masukkan nomor telepon",
+        "submit": "Proses",
+        "sign_up": "Daftar",
+        "continue_with": "atau menggunakan",
+        "toast": {
+          "success": "Berhasil membuat akun",
+          "error": "Gagal membuat akun"
+        }
+      },
+      "logout": {
+        "toast": {
+          "success": "Berhasil Keluar",
+          "error": "Gagal Keluar"
+        }
+      },
+      "forgot_password": {
+        "forgot_password": "Lupa password",
+        "description": "Ups, jangan khawatir tim kami akan membantu Anda untuk masuk kembali, Masukkan alamat email Anda untuk memperbaiki masalah ini.",
+        "label_email": "Masukkan email",
+        "submit": "Kirim"
+      },
+      "home": {
+        "hero": {
+          "title": "Inovasi Digital dengan",
+          "description": "Mempercepat inovasi digital melalui captive perusahaan & pasar potensial. Misi kami adalah membantu perusahaan untuk memanfaatkan pasar, orang, dan sumber daya yang ada untuk menciptakan terobosan produk digital, lebih cepat.",
+          "discover": "Temukan"
+        },
+        "feature": {
+          "title": "Kami membantu Anda membuka potensi sejati bisnis Anda dengan solusi kami yang modern, aman, dan andal.",
+          "description": "Anda dapat menjelajahi fitur-fitur yang kami sediakan dengan menyenangkan dan memiliki fungsi masing-masing fitur.",
+          "list": {
+            "1": "Pengembangan web",
+            "2": "Pengembangan aplikasi mobile",
+            "3": "Desain UI/UX",
+            "4": "CCTV & Solusi IT",
+            "5": "Solusi Jaringan",
+            "6": "24/7 Layanan dukungan"
+          }
+        },
+        "show_case": {
+          "title": "Keterlibatan Kami",
+          "description": "Yang dapat kami tunjukkan"
+        },
+        "insight": {
+          "title": "Wawasan",
+          "description": "Diinformasikan, Terinspirasi"
+        },
+        "call_support": {
+          "message": "Hi Yasin Tech, Saya ingin konsultasi"
+        }
+      },
+      "articles": {
+        "hero": {
+          "title": "Buat dirimu relax",
+          "description": "Di blog ini saya berbagi tips dan trik, framework, project, tutorial, dll. Pastikan Anda login untuk mendapatkan update terbaru",
+          "start_reading": "Mulai membaca"
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "common": {
+      "dashboard": "Beranda",
+      "content": "Konten",
+      "profile": "Profil",
+      "settings": "Pengaturan",
+      "sign_out": "Keluar",
+      "create": "Tulis",
+      "edit": "Ubah",
+      "testimony": "Testimonio"
+    },
+    "content": {
+      "empty_state": {
+        "title": "Tidak ada hasil",
+        "description": "Maaf, tidak ada hasil untuk ditampilkan. Silakan buat data terlebih dahulu"
+      },
+      "create": {
+        "title": "Tambah",
+        "write": "Tulis",
+        "form": {
+          "title": "Judul...",
+          "description": "Deskripsi...",
+          "preview": "Pratinjau",
+          "save": "Simpan",
+          "publish": "Terbitkan"
+        },
+        "toast": {
+          "success": "Berhasil menambah data",
+          "error": "Gagal menambah data"
+        }
+      },
+      "edit": {
+        "title": "Ubah",
+        "toast": {
+          "success": "Berhasil mengubah data",
+          "error": "Gagal mengubah data"
+        }
+      }
+    },
+    "testimony": {
+      "create": {
+        "form": {
+          "full_name": "Nama Lengkap",
+          "company": "Perusahaan",
+          "job_title": "Jabatan",
+          "desc_id": "Deskripsi (ID)",
+          "desc_en": "Deskripsi (EN)",
+          "rating": "Nilai",
+          "placeholder_desc": "Tulis pemikiran kamu di sini...",
+          "save": "Simpan",
+          "publish": "Terbitkan"
+        }
+      },
+      "edit": {
+        "toast": {
+          "success": "Berhasil mengubah data",
+          "error": "Gagal mengubah data"
+        }
+      }
+    }
+  },
+  "Components": {
+    "coming_soon": {
+      "title": "Segera Hadir",
+      "description": "Beritahu saya jika sudah selesai",
+      "subscribe": "Langganan"
+    },
+    "modal": {
+      "modal_editor": {
+        "cancel": "Batal",
+        "ok": "Masukkan"
+      }
+    },
+    "rich_editor": {
+      "error_upload_image": "Terjadi kesalahan saat upload gambar"
+    }
+  },
+  "LocaleLayout": {
+    "title": "Yasin Tech",
+    "company": "PT. Yasin Tech Indonesia",
+    "address": "Jl. Sei mencirim, Medan, Sumatera Utara",
+    "description": "Jasa Pembuatan Website, Jasa Pembuatan Android, Jasa Pemasangan dan Pemasangan CCTV dan IT Solution",
+    "meaning": "dibentuk pada tahun 2015 sebagai perusahaan solusi IT untuk bisnis. Tujuan kami adalah untuk memberikan layanan yang terjangkau dan menjadi mitra terpercaya bagi klien kami dalam mencapai tujuan bisnis mereka."
+  }
+}

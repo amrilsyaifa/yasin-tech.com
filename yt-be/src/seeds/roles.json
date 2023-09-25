@@ -1,0 +1,27 @@
+[
+  {
+    "slug": "owner",
+    "title": "Owner",
+    "description": "This is owner yasin tech role"
+  },
+  {
+    "slug": "super-admin",
+    "title": "Super Admin",
+    "description": "This is super admin role"
+  },
+  {
+    "slug": "admin",
+    "title": "Admin",
+    "description": "This is admin role"
+  },
+  {
+    "slug": "member",
+    "title": "Member",
+    "description": "This is member role"
+  },
+  {
+    "slug": "guest",
+    "title": "Guest",
+    "description": "This is guest role"
+  }
+]
