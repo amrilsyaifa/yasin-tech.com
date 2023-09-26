@@ -48,7 +48,7 @@ class App {
   }
 
   protected routes(): void {
-    this.app.route("/").get((req: Request, res: Response) => {
+    this.app.route("/api/health").get((req: Request, res: Response) => {
       res.status(200).json({ message: "Hi there 👋" });
     });
 
