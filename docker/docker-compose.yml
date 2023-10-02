@@ -1,4 +1,4 @@
-version: '3.8'
+version: "3.8"
 
 services:
   mongo:
@@ -13,9 +13,9 @@ services:
       MONGO_INITDB_ROOT_USERNAME: ${MONGODB_INIT_ROOT_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGODB__INIT_ROOT_PASSWORD}
       MONGO_REPLICA_HOST: $MONGO_REPLICA_HOST
-      MONGO_REPLICA_PORT: '$MONGODB_DOCKER_PORT'
+      MONGO_REPLICA_PORT: "$MONGODB_DOCKER_PORT"
     ports:
-      - '0.0.0.0:$MONGODB_DOCKER_PORT:$MONGODB_DOCKER_PORT'
+      - "0.0.0.0:$MONGODB_DOCKER_PORT:$MONGODB_DOCKER_PORT"
     networks:
       - node-webapp-network
     volumes:
@@ -27,7 +27,6 @@ services:
         target: /data/configdb
 
   mongo-express:
-    restart: unless-stopped
     image: mongo-express:latest
     container_name: mongo-express
     env_file: ./.env
@@ -37,7 +36,7 @@ services:
       ME_CONFIG_MONGODB_SERVER: mongo
       ME_CONFIG_MONGODB_PORT: $MONGODB_DOCKER_PORT
     ports:
-      - '0.0.0.0:$MONGODB_EXPRESS_DOCKER_PORT:$MONGODB_EXPRESS_DOCKER_PORT'
+      - "0.0.0.0:$MONGODB_EXPRESS_DOCKER_PORT:$MONGODB_EXPRESS_DOCKER_PORT"
     networks:
       - node-webapp-network
     depends_on:
@@ -51,10 +50,10 @@ services:
       dockerfile: ./docker/development/Dockerfile
     container_name: app-dev
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
       - .:/app
-      - '/app/node_modules'
+      - "/app/node_modules"
       - /app/.next
     networks:
       - node-webapp-network
@@ -67,7 +66,7 @@ services:
       dockerfile: ./docker/production/Dockerfile
     container_name: app-prod
     ports:
-      - '3000:3000'
+      - "3000:3000"
     volumes:
       - .:/app
       - /app/node_modules
@@ -77,10 +76,10 @@ services:
     deploy:
       resources:
         limits:
-          cpus: '2'
+          cpus: "2"
           memory: 512M
         reservations:
-          cpus: '0.25'
+          cpus: "0.25"
           memory: 64M
 
 networks:
