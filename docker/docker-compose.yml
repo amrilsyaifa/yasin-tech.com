@@ -36,7 +36,7 @@ services:
       ME_CONFIG_MONGODB_SERVER: mongo
       ME_CONFIG_MONGODB_PORT: $MONGODB_DOCKER_PORT
     ports:
-      - "0.0.0.0:$MONGODB_EXPRESS_DOCKER_PORT:$MONGODB_EXPRESS_DOCKER_PORT"
+      - "0.0.0.0:$MONGODB_EXPRESS_OUTPUT_DOCKER_PORT:$MONGODB_EXPRESS_INPUT_DOCKER_PORT"
     networks:
       - node-webapp-network
     depends_on:
