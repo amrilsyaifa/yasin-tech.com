@@ -5,7 +5,7 @@ services:
     restart: unless-stopped
     build:
       context: .
-      dockerfile: ./docker/mongodb_replica_set/Dockerfile
+      dockerfile: ./mongodb_replica_set/Dockerfile
     env_file: ./.env
     container_name: mongo
     environment:
