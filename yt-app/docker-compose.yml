@@ -1,0 +1,42 @@
+version: '3.8'
+services:
+  app-dev:
+    env_file: ./.env
+    container_name: app-dev
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    environment:
+      NODE_ENV: production
+      NEXT_PUBLIC_BASE_URL: $NEXT_PUBLIC_BASE_URL
+      NEXT_PUBLIC_API_URL: $NEXT_PUBLIC_API_URL
+      NEXT_PUBLIC_CRYPTO_SECRET: $NEXT_PUBLIC_CRYPTO_SECRET
+      NEXT_PUBLIC_GOOGLE_API_TOKEN: $NEXT_PUBLIC_GOOGLE_API_TOKEN
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
+
+  app-prod:
+    env_file: ./.env
+    container_name: app-prod
+    build:
+      target: production
+      context: .
+      dockerfile: Dockerfile.prod
+    restart: always
+    environment:
+      NODE_ENV: development
+      NEXT_PUBLIC_BASE_URL: $NEXT_PUBLIC_BASE_URL
+      NEXT_PUBLIC_API_URL: $NEXT_PUBLIC_API_URL
+      NEXT_PUBLIC_CRYPTO_SECRET: $NEXT_PUBLIC_CRYPTO_SECRET
+      NEXT_PUBLIC_GOOGLE_API_TOKEN: $NEXT_PUBLIC_GOOGLE_API_TOKEN
+    volumes:
+      - .:/app
+      - /app/node_modules
+      - /app/.next
+    ports:
+      - 3000:3000
