@@ -7,11 +7,11 @@ services:
     env_file: ./.env
     container_name: mongo
     environment:
-      MONGO_INITDB_DATABASE: ${DB_NAME}
-      MONGO_INITDB_ROOT_USERNAME: ${DB_USER}
-      MONGO_INITDB_ROOT_PASSWORD: ${DB_PASSWORD}
+      MONGO_INITDB_DATABASE: $DB_NAME
+      MONGO_INITDB_ROOT_USERNAME: $DB_USER
+      MONGO_INITDB_ROOT_PASSWORD: $DB_PASSWORD
     ports:
-      - "0.0.0.0:$MONGODB_DOCKER_PORT:$MONGODB_DOCKER_PORT"
+      - "0.0.0.0:$MONGODB_DOCKER_PORT:27017"
     networks:
       - node-webapp-network
     volumes:
@@ -27,8 +27,8 @@ services:
     container_name: mongo-express
     env_file: ./.env
     environment:
-      ME_CONFIG_MONGODB_ADMINUSERNAME: $MONGODB_INIT_ROOT_USER
-      ME_CONFIG_MONGODB_ADMINPASSWORD: $MONGODB__INIT_ROOT_PASSWORD
+      ME_CONFIG_MONGODB_ADMINUSERNAME: $DB_USER
+      ME_CONFIG_MONGODB_ADMINPASSWORD: $DB_PASSWORD
       ME_CONFIG_MONGODB_SERVER: mongo
       ME_CONFIG_MONGODB_PORT: $MONGODB_DOCKER_PORT
     ports:
