@@ -1,0 +1,7 @@
+node_modules
+.gitignore
+nodemon.json
+types.d.ts
+.git
+yarn-error.log
+build

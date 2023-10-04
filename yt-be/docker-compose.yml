@@ -1,19 +1,15 @@
-version: "3.8"
+version: "4"
 
 services:
   mongo:
+    image: mongo:latest
     restart: unless-stopped
-    build:
-      context: .
-      dockerfile: ./mongodb_replica_set/Dockerfile
     env_file: ./.env
     container_name: mongo
     environment:
       MONGO_INITDB_DATABASE: ${MONGODB_INIT_DATABASE}
       MONGO_INITDB_ROOT_USERNAME: ${MONGODB_INIT_ROOT_USER}
       MONGO_INITDB_ROOT_PASSWORD: ${MONGODB__INIT_ROOT_PASSWORD}
-      MONGO_REPLICA_HOST: $MONGO_REPLICA_HOST
-      MONGO_REPLICA_PORT: "$MONGODB_DOCKER_PORT"
     ports:
       - "0.0.0.0:$MONGODB_DOCKER_PORT:$MONGODB_DOCKER_PORT"
     networks:
@@ -42,45 +38,37 @@ services:
     depends_on:
       - mongo
 
-  app-dev:
+  server-prod:
+    env_file: ./.env
     depends_on:
       - mongo
     build:
       context: .
-      dockerfile: ./docker/development/Dockerfile
-    container_name: app-dev
+    container_name: server-prod
     ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-      - "/app/node_modules"
-      - /app/.next
+      - "4000:4000"
+    environment:
+      NODE_ENV: $NODE_ENV
+      DB_HOST: mongo
+      DB_USER: $DB_USER
+      DB_PASSWORD: $DB_PASSWORD
+      DB_PORT: $DB_PORT
+      DB_NAME: $DB_NAME
+      JWT_SECRET_KEY: $JWT_SECRET_KEY
+      JWT_EXPIRES_IN: $JWT_EXPIRES_IN
+      JWT_REFRESH_EXPIRES_IN: $JWT_REFRESH_EXPIRES_IN
+      CRYPTO_SECRET: $CRYPTO_SECRET
+      SEED_SECRET: $SEED_SECRET
+      GOOGLE_USER_INFO_URL: $GOOGLE_USER_INFO_URL
+      BASE_URL: $BASE_URL
+      PORT: $PORT
+      NEXT_PUBLIC_EMAIL_HOST: $NEXT_PUBLIC_EMAIL_HOST
+      NEXT_PUBLIC_EMAIL_USER: $NEXT_PUBLIC_EMAIL_USER
+      NEXT_PUBLIC_EMAIL_PASS: $NEXT_PUBLIC_EMAIL_PASS
+    stdin_open: true
+    tty: true
     networks:
       - node-webapp-network
-
-  app-prod:
-    depends_on:
-      - mongo
-    build:
-      context: .
-      dockerfile: ./docker/production/Dockerfile
-    container_name: app-prod
-    ports:
-      - "3000:3000"
-    volumes:
-      - .:/app
-      - /app/node_modules
-      - /app/.next
-    networks:
-      - node-webapp-network
-    deploy:
-      resources:
-        limits:
-          cpus: "2"
-          memory: 512M
-        reservations:
-          cpus: "0.25"
-          memory: 64M
 
 networks:
   node-webapp-network:
