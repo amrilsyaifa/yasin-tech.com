@@ -3,7 +3,7 @@ version: "4"
 services:
   mongo:
     image: mongo:latest
-    restart: unless-stopped
+    restart: always
     env_file: ./.env
     container_name: mongo
     environment:
