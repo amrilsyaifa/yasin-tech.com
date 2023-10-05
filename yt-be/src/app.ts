@@ -68,7 +68,7 @@ class App {
   }
 }
 
-const port: number = Number(process.env.PORT) || 8000;
+const port: number = Number(process.env.APP_PORT) || 8000;
 
 const app = new App().app;
 app.listen(port, () => {
