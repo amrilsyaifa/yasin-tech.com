@@ -1,5 +1,5 @@
 import '@styles/slick.scss';
-import RootArticlesLayout from '../layout/RootArticlesLayout';
+import RootArticlesLayout from '../../layouts/RootArticlesLayout';
 import Hero from './Hero';
 import ContentVertical from './ContentVertical';
 import { FC } from 'react';

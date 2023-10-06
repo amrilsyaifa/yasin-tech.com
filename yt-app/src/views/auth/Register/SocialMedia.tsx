@@ -21,7 +21,7 @@ import {
 import { ModeProd } from '@helpers/isProd';
 
 const SocialMedia: FC<SocialMediaProps> = ({ onStart, onEnd }) => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const loading = useDisclosure();
 
   const params = useParams();

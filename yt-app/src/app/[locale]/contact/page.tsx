@@ -1,8 +1,7 @@
 'use client';
 
 import ComingSoon from '@components/ComingSoon';
-import RootLayout from '@views/home/layout/RootLayout';
-import React from 'react';
+import { RootLayout } from '@views/layouts';
 
 const Contact = () => {
   return (

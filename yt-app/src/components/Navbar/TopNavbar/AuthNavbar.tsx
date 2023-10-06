@@ -7,7 +7,7 @@ import classNames from 'classnames';
 import { useOnClickOutside } from 'usehooks-ts';
 
 const AuthNavbar = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const [isOpenDrawer, setIsOpenDeawer] = useState<boolean>(false);
 
   const ref = useRef<HTMLDivElement>(null);

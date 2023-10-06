@@ -4,7 +4,7 @@ import { useTranslations } from 'next-intl';
 import { FcCustomerSupport } from 'react-icons/fc';
 
 const CallSupport = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   return (
     <a
       target='_blank'

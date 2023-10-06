@@ -1,9 +1,6 @@
-import React, { FC, ReactNode } from 'react';
+import React, { FC } from 'react';
 import HomeNavbar from '@components/Navbar/TopNavbar/HomeNavbar';
-
-export interface RootArticlesLayoutProps {
-  children: ReactNode;
-}
+import { RootArticlesLayoutProps } from './interface';
 
 const RootArticlesLayout: FC<RootArticlesLayoutProps> = ({ children }) => {
   return (

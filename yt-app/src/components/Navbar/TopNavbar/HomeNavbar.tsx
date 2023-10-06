@@ -4,7 +4,6 @@ import LogoText from '@components/Icons/yt-icon-text.svg';
 import Image from 'next/image';
 import { useTranslations } from 'next-intl';
 import Link from '@components/Link';
-// import { AiOutlineSearch } from 'react-icons/ai';
 import classNames from 'classnames';
 import { memo, useCallback, useEffect, useRef, useState } from 'react';
 import { useOnClickOutside } from 'usehooks-ts';
@@ -17,7 +16,7 @@ import cookieCutter from 'cookie-cutter';
 import { identityToken } from '@constant/token';
 
 const HomeNavbar = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const [isOpenDrawer, setIsOpenDeawer] = useState<boolean>(false);
 
   const ref = useRef<HTMLDivElement>(null);
@@ -122,10 +121,10 @@ const HomeNavbar = () => {
             </li>
             <li>
               <Link
-                href='/about'
+                href='/service'
                 className='block rounded py-2 pl-3 pr-4 capitalize text-yt-blue-600 hover:bg-yt-gray-100 dark:text-yt-blue-500 dark:hover:bg-yt-gray-600 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-yt-blue-600 md:dark:hover:bg-transparent md:dark:hover:text-yt-blue-500'
               >
-                {t('navbar.top_navbar.home.about')}
+                {t('navbar.top_navbar.home.service')}
               </Link>
             </li>
             <li>
@@ -136,25 +135,11 @@ const HomeNavbar = () => {
                 {t('navbar.top_navbar.home.contact')}
               </Link>
             </li>
-            {/* {!hasProfile && (
-              <li>
-                <Link
-                  href='/auth/signin'
-                  className='block rounded py-2 pl-3 pr-4 capitalize text-yt-blue-600 hover:bg-yt-gray-100 dark:text-yt-blue-500 dark:hover:bg-yt-gray-600 dark:hover:text-white md:border-0 md:p-0 md:hover:bg-transparent md:hover:text-yt-blue-600 md:dark:hover:bg-transparent md:dark:hover:text-yt-blue-500'
-                >
-                  {t('navbar.top_navbar.home.sign_in')}
-                </Link>
-              </li>
-            )} */}
-
             {hasProfile && (
               <li>
                 <UserHomeNavbar profile={profile} />
               </li>
             )}
-            {/* <li>
-              <AiOutlineSearch className='dark:hover:-gray-700 ml-2 h-6 w-6 text-yt-blue-600 hover:bg-yt-gray-100 dark:text-yt-blue-500 dark:hover:text-white md:hover:text-yt-blue-600 md:dark:hover:bg-transparent md:dark:hover:text-yt-blue-500' />
-            </li> */}
           </ul>
         </div>
       </div>

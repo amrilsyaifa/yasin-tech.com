@@ -1,7 +1,7 @@
 'use client';
 
 import { motion } from 'framer-motion';
-import { ScrollAnimationWrapper } from './layout';
+import ScrollAnimationWrapper from './ScrollAnimationWrapper';
 import { FC, useMemo } from 'react';
 import getScrollAnimation from '@utils/getScrollAnimation';
 
@@ -15,7 +15,7 @@ interface InsightProps {
 }
 
 const Insight: FC<InsightProps> = ({ posts }) => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   return (

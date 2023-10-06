@@ -11,7 +11,7 @@ import { identityRefreshToken, identityToken } from '@constant/token';
 
 const Signout = () => {
   const loading = useDisclosure();
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const router = useRouter();
 
   const successToast = () =>

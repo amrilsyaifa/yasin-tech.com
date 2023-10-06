@@ -1,7 +1,7 @@
 'use client';
 
 import ComingSoon from '@components/ComingSoon';
-import RootLayout from '@views/home/layout/RootLayout';
+import { RootLayout } from '@views/layouts';
 
 const Products = () => {
   return (

@@ -4,7 +4,10 @@ export interface RootHomeLayoutProps {
   children: ReactNode;
 }
 
-export interface ScrollAnimationWrapperProps {
+export interface RootArticlesIDLayoutProps {
   children: ReactNode;
-  className?: string;
+}
+
+export interface RootArticlesLayoutProps {
+  children: ReactNode;
 }

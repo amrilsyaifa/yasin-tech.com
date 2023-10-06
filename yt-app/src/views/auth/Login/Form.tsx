@@ -23,7 +23,7 @@ import {
 import { ModeProd } from '@helpers/isProd';
 
 const FormLogin = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
 
   const router = useRouter();
   const params = useParams();

@@ -10,7 +10,7 @@ interface EditorProps {
 }
 
 const Editor: FC<EditorProps> = ({ placeholder }) => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const editor = useEditor({
     extensions: [StarterKit],
     content: `<p>${t('hello')} 🌎️</p>`,

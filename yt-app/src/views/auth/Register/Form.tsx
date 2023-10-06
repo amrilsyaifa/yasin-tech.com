@@ -15,7 +15,7 @@ import useDisclosure from '@hooks/useDisclosure';
 import SocialMedia from './SocialMedia';
 
 const FormRegister = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
 
   const router = useRouter();
   const loading = useDisclosure();

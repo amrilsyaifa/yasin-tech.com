@@ -1,5 +1,5 @@
 {
-  "Auth": {
+  "Home": {
     "hello": "Hallo dunia!",
     "translation": {
       "en": "English",
@@ -18,6 +18,7 @@
           "articles": "Artikel",
           "about": "Tentang Kami",
           "contact": "Kontak",
+          "service": "melayani",
           "sign_in": "masuk"
         }
       }
@@ -104,6 +105,44 @@
           "title": "Buat dirimu relax",
           "description": "Di blog ini saya berbagi tips dan trik, framework, project, tutorial, dll. Pastikan Anda login untuk mendapatkan update terbaru",
           "start_reading": "Mulai membaca"
+        }
+      },
+      "service": {
+        "title": "Bidang Keahlian kami adalah Pengembangan Web Modern dan Aplikasi Seluler",
+        "description": "Kami mengembangkan web khusus, aplikasi seluler, dan antarmuka pengguna menggunakan React JS, React Native, Nodejs dan Golang, yang melayani kebutuhan spesifik klien.",
+        "our_skill_include": "Keahlian kami meliputi",
+        "list": {
+          "title": {
+            "1": "Web Development",
+            "2": "Mobile Development",
+            "3": "UI/UX Design",
+            "4": "CCTV & IT Solution",
+            "5": "Network Solution",
+            "6": "24/7 Support Service"
+          },
+          "description": {
+            "1": "Bergabunglah dengan liga aplikasi web terkemuka. Tim pengembang kami dengan keahlian mereka yang tak tertandingi dalam Nodejs, Golang, dan React akan membantu Anda merancang struktur yang tangguh untuk membawa bisnis Anda ke tingkat yang lebih tinggi.",
+            "2": "Semua aplikasi Anda dibangun di Nodejs, Golang, dan React Native memungkinkan Anda memerintahkan perubahan dengan lancar untuk iOS dan Android secara bersamaan sambil memangkas biaya pengembangan dan pemeliharaan dalam jangka panjang.",
+            "3": "Desain yang baik meningkatkan pengalaman pengguna dan mendorong tujuan komersial. Dengan memanfaatkan pengujian A/B dan analisis metrik utama dari proyek yang kami terapkan, kami memberikan pengalaman luar biasa sekaligus mempercepat kinerja bisnis.",
+            "4": "Dengan tim profesional menggunakan konsep pemasangan yang baik dan cepat, serta menggunakan CCTV terbaik. Kami menggunakan CCTV dan kabel yang berkualitas sehingga CCTV dapat digunakan dalam jangka waktu lama.",
+            "5": "Kami memiliki tim profesional yang berpengalaman dalam mengerjakan proyek skala besar dengan routing statis dan dinamis RIP (Routing Information Protocol), IGRP (Internal Gateway Routing Protocol), OSPF (Open Shortest Path First), EIGRP (Enhanced Internal Gateway Routing Protocol), BGP (Border Gateway Protocol)",
+            "6": "Layanan 24/7 ini kami berikan untuk membantu klien ketika ada masalah yang harus diselesaikan secepatnya. agar bisnis klien tetap berjalan dengan baik"
+          },
+          "skill_include": {
+            "react": "React",
+            "golang": "Golang",
+            "nodejs": "Nodejs",
+            "react_native": "React Native",
+            "mikrotik": "Mikrotik",
+            "cisco": "Cisco",
+            "cctv": "CCTV",
+            "hk": "Hikvision",
+            "dahua": "Dahua",
+            "tp_link": "TP Link",
+            "product_design": "Product Design Mpv",
+            "design": "Web and Mobile Design",
+            "service": "service 24/7"
+          }
         }
       }
     }

@@ -1,5 +1,5 @@
 import { PostProps } from '@hooks/api/usePosts/interface';
-import RootArticlesIDLayout from '../layout/RootArticlesIDLayout';
+import RootArticlesIDLayout from '../../layouts/RootArticlesIDLayout';
 import AnotherArticle from './AnotherArticle';
 import { FC } from 'react';
 import RenderTiptap from './RenderTiptap';

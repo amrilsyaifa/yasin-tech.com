@@ -8,6 +8,10 @@ type EnvVariableKey =
   | "NODE_ENV"
   | "GOOGLE_USER_INFO_URL"
   | "BASE_URL"
+  | "EMAIL_HOST"
+  | "EMAIL_USER"
+  | "EMAIL_PASS"
+  | "EMAIL_PORT"
   | "PORT";
 
 function getEnvToVar(key: EnvVariableKey): string {

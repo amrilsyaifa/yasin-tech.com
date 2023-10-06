@@ -1,7 +1,7 @@
 'use client';
 
 import ButtonPrimary from '@components/Button/ButtonPrimary';
-import ScrollAnimationWrapper from '@views/home/layout/ScrollAnimationWrapper';
+import ScrollAnimationWrapper from '@views/home/ScrollAnimationWrapper';
 import getScrollAnimation from '@utils/getScrollAnimation';
 import { motion } from 'framer-motion';
 import { useMemo } from 'react';
@@ -23,13 +23,13 @@ const Hero = () => {
             >
               <div className=' row-start-2 flex flex-col items-start justify-center sm:row-start-1'>
                 <h1 className='text-3xl font-medium leading-normal text-yt-gray-600 lg:text-4xl xl:text-5xl'>
-                  {t('Auth.pages.articles.hero.title')}
+                  {t('Home.pages.articles.hero.title')}
                 </h1>
                 <p className='mb-6 mt-4 text-yt-gray-600'>
-                  {t('Auth.pages.articles.hero.description')}
+                  {t('Home.pages.articles.hero.description')}
                 </p>
                 <ButtonPrimary>
-                  {t('Auth.pages.articles.hero.start_reading')}
+                  {t('Home.pages.articles.hero.start_reading')}
                 </ButtonPrimary>
               </div>
               <div className='flex w-full'>

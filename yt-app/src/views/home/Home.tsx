@@ -1,5 +1,4 @@
-import React, { FC } from 'react';
-import RootHomeLayout from './layout';
+import { FC } from 'react';
 import Hero from './Hero';
 import Feature from './Feature';
 import ShowCase from './ShowCase';
@@ -8,6 +7,7 @@ import CallSupport from './CallSupport';
 import { PostProps } from '@hooks/api/usePosts/interface';
 import { Testimony } from '@hooks/api/useListTestimony/interface';
 import { isEmpty } from 'lodash';
+import RootHomeLayout from '@views/layouts/RootLayout';
 
 interface HomeViewProps {
   posts: PostProps[];

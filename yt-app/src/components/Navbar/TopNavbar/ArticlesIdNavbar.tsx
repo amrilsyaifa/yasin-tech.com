@@ -9,7 +9,7 @@ import { memo, useCallback, useRef, useState } from 'react';
 import classNames from 'classnames';
 
 const ArticlesIdNavbar = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const [isOpenDrawer, setIsOpenDeawer] = useState<boolean>(false);
 
   const ref = useRef<HTMLDivElement>(null);

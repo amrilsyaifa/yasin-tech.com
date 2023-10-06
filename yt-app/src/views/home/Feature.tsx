@@ -3,7 +3,7 @@
 import getScrollAnimation from '@utils/getScrollAnimation';
 import { motion } from 'framer-motion';
 import { useMemo } from 'react';
-import { ScrollAnimationWrapper } from './layout';
+import ScrollAnimationWrapper from './ScrollAnimationWrapper';
 import Image from 'next/image';
 import Illustration from '@components/Icons/illustration-home-2.svg';
 import { useTranslations } from 'next-intl';
@@ -14,7 +14,7 @@ import { BsHddNetwork } from 'react-icons/bs';
 import { RiCustomerService2Fill } from 'react-icons/ri';
 
 const Feature = () => {
-  const t = useTranslations('Auth');
+  const t = useTranslations('Home');
   const scrollAnimation = useMemo(() => getScrollAnimation(), []);
 
   const features = [

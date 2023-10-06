@@ -1,5 +1,5 @@
 {
-  "Auth": {
+  "Home": {
     "hello": "Hello world!",
     "translation": {
       "en": "english",
@@ -18,6 +18,7 @@
           "articles": "articles",
           "about": "about",
           "contact": "contact",
+          "service": "service",
           "sign_in": "sign in"
         }
       }
@@ -104,6 +105,44 @@
           "title": "Relax yourself",
           "description": "On this blog I share tips and tricks, frameworks, projects, tutorials, etc Make sure you login to get the latest updates",
           "start_reading": "Start reading"
+        }
+      },
+      "service": {
+        "title": "Our Areas of Expertise are Modern Web and Mobile Application Development",
+        "description": "We develop custom web, mobile applications and user interfaces using React JS, React Native, Nodejs dan Golang, serving the specific needs of clients.",
+        "our_skill_include": "Our skill include",
+        "list": {
+          "title": {
+            "1": "Web Development",
+            "2": "Mobile Development",
+            "3": "UI/UX Design",
+            "4": "CCTV & IT Solution",
+            "5": "Network Solution",
+            "6": "24/7 Support Service"
+          },
+          "description": {
+            "1": "Come join the league of top-notch web applications. Our team of developers with their unmatched expertise in Nodejs, Golang and React will help you in designing resilient structures to take your business to new heights.",
+            "2": "All of your apps being built on Nodejs, Golang and React Native allows you to seamlessly command changes for both iOS and Android simultaneously while slashing development and maintenance costs in the long run.",
+            "3": "Good design improves user experience and drives commercial objectives. By utilizing A/B tests and the key metrics analysis of projects we implement, we deliver great experience while accelerating business performance.",
+            "4": "With a professional team using the concept of good and fast instalation, and using best of CCTV. We use high quality CCTV and cables so that CCTV can be used for a long time.",
+            "5": "We have a professional team that has experience in working on large-scale projects with static and dynamic routing RIP (Routing Information Protocol), IGRP (Internal Gateway Routing Protocol), OSPF (Open Shortest Path First), EIGRP (Enhanced Internal Gateway Routing Protocol), BGP (Border Gateway Protocol).",
+            "6": "We provide this 24/7 service to help clients when there is a problem that must be resolved as quickly as possible. so that the client's business continues to run well."
+          },
+          "skill_include": {
+            "react": "React",
+            "golang": "Golang",
+            "nodejs": "Nodejs",
+            "react_native": "React Native",
+            "mikrotik": "Mikrotik",
+            "cisco": "Cisco",
+            "cctv": "CCTV",
+            "hk": "Hikvision",
+            "dahua": "Dahua",
+            "tp_link": "TP Link",
+            "product_design": "Product Design Mpv",
+            "design": "Web and Mobile Design",
+            "service": "service 24/7"
+          }
         }
       }
     }
