@@ -1,0 +1,724 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --yt-blue-100: #ebfaff;
+  --yt-blue-200: #cbf2fe;
+  --yt-blue-300: #7ddcff;
+  --yt-blue-400: #00beff;
+  --yt-blue-500: #009feb;
+  --yt-blue-600: #0081cc;
+  --yt-darkblue-100: #6ca3e0;
+  --yt-darkblue-200: #5f95d0;
+  --yt-darkblue-300: #3176c2;
+  --yt-darkblue-400: #0056b3;
+  --yt-darkblue-500: #00449c;
+  --yt-black: #00357b;
+  --yt-green-200: #bcefe2;
+  --yt-green-100: #e5f9f6;
+  --yt-green-300: #75e2c9;
+  --yt-green-400: #00cbae;
+  --yt-green-500: #00ae97;
+  --yt-green-600: #008878;
+  --yt-yellow-100: #f8f7e0;
+  --yt-yellow-200: #f5f3ae;
+  --yt-yellow-300: #eceb73;
+  --yt-yellow-400: #ded807;
+  --yt-yellow-500: #c3c001;
+  --yt-yellow-600: #a69f03;
+  --yt-red-100: #fef2f7;
+  --yt-red-200: #fcdde2D;
+  --yt-red-300: #fba3b1;
+  --yt-red-400: #f9587a;
+  --yt-red-500: #e3385c;
+  --yt-red-600: #c42151;
+  --yt-purple-100: #f0effc;
+  --yt-purple-200: #e0dcf9;
+  --yt-purple-300: #b2aeeb;
+  --yt-purple-400: #766ddd;
+  --yt-purple-500: #544dc9;
+  --yt-purple-600: #443ba8;
+  --yt-gray-100: #e3ecf5;
+  --yt-gray-200: #e3ecf5;
+  --yt-gray-300: #8fb0d4;
+  --yt-gray-400: #6b8fbc;
+  --yt-gray-500: #1e3f6b;
+  --yt-gray-600: #0c2846;
+  --yt-white: #fff;
+  --yt-black: theme(colors.black);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+.app {
+  width: 720px;
+  margin: 0 auto 48px;
+}
+
+.editor {
+  position: relative;
+  width: 100%;
+  .menu {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    z-index: 1;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    width: calc(100% - 4px);
+    height: 40px;
+    margin: 0;
+    padding: 0 8px;
+
+    border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+    border-bottom: 1px solid var(--yt-gray-500);
+    background-color: var(--yt-white);
+    color: var(--yt-gray-200);
+  }
+
+  .bubble-menu-dark,
+  .bubble-menu-light {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 8px;
+
+    border-radius: 4px;
+  }
+
+  .bubble-menu-dark {
+    background-color: var(--yt-gray-600);
+    color: var(--yt-white);
+  }
+
+  .bubble-menu-light {
+    border: 2px solid var(--yt-gray-400);
+    background-color: var(--yt-white);
+    color: var(--yt-gray-200);
+  }
+
+  .ProseMirror {
+    margin-top: 4px;
+    padding: 48px 8px 8px;
+
+    border: 1px solid var(--yt-gray-400);
+    border-radius: 4px;
+
+    p.is-empty {
+      display: block;
+    }
+
+    p:has(img) {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .image-tiptap {
+        width: 20rem;
+        height: auto;
+      }
+    }
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    > * + * {
+      margin-top: 0.75em;
+    }
+
+    > *:first-child {
+      margin-top: 0;
+    }
+
+    > *:last-child {
+      margin-bottom: 0;
+    }
+
+    ul,
+    ol {
+      margin: 0.8em 0;
+      padding: 0 0 0 2em;
+
+      li {
+        > ul,
+        > ol {
+          margin: 0;
+        }
+
+        p {
+          display: inline;
+          margin: 0;
+        }
+      }
+    }
+
+    ul[data-type='taskList'] {
+      list-style: none;
+      margin: 0.8em 0;
+      padding: 0 0 0 0.9em;
+
+      li {
+        display: flex;
+
+        > label {
+          flex: 0 0 auto;
+          margin-right: 0.5em;
+          user-select: none;
+        }
+
+        > div {
+          flex: 1 1 auto;
+        }
+      }
+
+      input[type='checkbox'] {
+        cursor: pointer;
+      }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      line-height: 1.1;
+    }
+
+    p {
+      margin: 0.8em 0;
+    }
+
+    code {
+      background: rgba(#616161, 0.1);
+      color: #616161;
+      border: 1px solid rgba(#808080, 0.3);
+      border-radius: 3px;
+      padding: 1px;
+    }
+
+    pre {
+      color: #24292e;
+      background: #f5f7f9;
+      font-family: 'ui-monospace', 'SFMono-Regular', 'SF Mono', Menlo, Consolas,
+        'Liberation Mono', monospace;
+      padding: 0.75rem 1rem;
+      border-radius: 0.5rem;
+
+      code {
+        color: inherit;
+        padding: 0;
+        background: none;
+        font-size: 0.8rem;
+        border: none;
+      }
+    }
+
+    blockquote {
+      padding-left: 1rem;
+      border-left: 2px solid rgba(#0d0d0d, 0.1);
+    }
+
+    hr {
+      border: none;
+      border-top: 2px solid rgba(#0d0d0d, 0.1);
+      margin: 1.5rem 0;
+    }
+
+    span[data-mention] {
+      background-color: rgba(#005d71, 0.15);
+      box-decoration-break: clone;
+      font-size: 0.9rem;
+      font-weight: bold;
+      border-radius: 4px;
+      padding: 2px 4px;
+      color: #005d71;
+
+      > .char {
+        display: inline-block;
+        vertical-align: top;
+        margin: 1px 2px 0 0;
+        color: #0098b8;
+      }
+    }
+
+    span[data-emoji-suggestion],
+    span[data-emoji-replacer] {
+      > img {
+        width: 1.1em;
+        height: 1.1em;
+        margin: 0 0.05em;
+        vertical-align: -0.25em;
+      }
+    }
+
+    p.is-editor-empty:first-child::before {
+      content: attr(data-placeholder);
+      float: left;
+      color: rgba(#111111, 0.3);
+      pointer-events: none;
+      height: 0;
+      font-style: italic;
+    }
+
+    .color {
+      white-space: nowrap;
+
+      &::before {
+        content: ' ';
+        display: inline-block;
+        width: 0.8em;
+        height: 0.8em;
+        border: 1px solid rgba(#808080, 0.3);
+        vertical-align: middle;
+        margin-right: 0.2em;
+        margin-bottom: 0.15em;
+        border-radius: 50%;
+        background: var(--color);
+      }
+    }
+
+    /*!
+      Theme: GitHub
+      Description: Light theme as seen on github.com
+      Author: github.com
+      Maintainer: @Hirse
+      Updated: 2021-05-15
+      Outdated base version: https://github.com/primer/github-syntax-light
+      Current colors taken from GitHub's CSS
+    */
+
+    .hljs {
+      color: #24292e;
+      background: #ffffff;
+    }
+
+    .hljs-doctag,
+    .hljs-keyword,
+    .hljs-meta .hljs-keyword,
+    .hljs-template-tag,
+    .hljs-template-variable,
+    .hljs-type,
+    .hljs-variable.language_ {
+      /* prettylights-syntax-keyword */
+      color: #d73a49;
+    }
+
+    .hljs-title,
+    .hljs-title.class_,
+    .hljs-title.class_.inherited__,
+    .hljs-title.function_ {
+      /* prettylights-syntax-entity */
+      color: #6f42c1;
+    }
+
+    .hljs-attr,
+    .hljs-attribute,
+    .hljs-literal,
+    .hljs-meta,
+    .hljs-number,
+    .hljs-operator,
+    .hljs-variable,
+    .hljs-selector-attr,
+    .hljs-selector-class,
+    .hljs-selector-id {
+      /* prettylights-syntax-constant */
+      color: #005cc5;
+    }
+
+    .hljs-regexp,
+    .hljs-string,
+    .hljs-meta .hljs-string {
+      /* prettylights-syntax-string */
+      color: #032f62;
+    }
+
+    .hljs-built_in,
+    .hljs-symbol {
+      /* prettylights-syntax-variable */
+      color: #e36209;
+    }
+
+    .hljs-comment,
+    .hljs-code,
+    .hljs-formula {
+      /* prettylights-syntax-comment */
+      color: #6a737d;
+    }
+
+    .hljs-name,
+    .hljs-quote,
+    .hljs-selector-tag,
+    .hljs-selector-pseudo {
+      /* prettylights-syntax-entity-tag */
+      color: #22863a;
+    }
+
+    .hljs-subst {
+      /* prettylights-syntax-storage-modifier-import */
+      color: #24292e;
+    }
+
+    .hljs-section {
+      /* prettylights-syntax-markup-heading */
+      color: #005cc5;
+      font-weight: bold;
+    }
+
+    .hljs-bullet {
+      /* prettylights-syntax-markup-list */
+      color: #735c0f;
+    }
+
+    .hljs-emphasis {
+      /* prettylights-syntax-markup-italic */
+      color: #24292e;
+      font-style: italic;
+    }
+
+    .hljs-strong {
+      /* prettylights-syntax-markup-bold */
+      color: #24292e;
+      font-weight: bold;
+    }
+
+    .hljs-addition {
+      /* prettylights-syntax-markup-inserted */
+      color: #22863a;
+      background-color: #f0fff4;
+    }
+
+    .hljs-deletion {
+      /* prettylights-syntax-markup-deleted */
+      color: #b31d28;
+      background-color: #ffeef0;
+    }
+
+    .hljs-char.escape_,
+    .hljs-link,
+    .hljs-params,
+    .hljs-property,
+    .hljs-punctuation,
+    .hljs-tag {
+      /* purposely ignored */
+    }
+  }
+}
+
+.rich-editor {
+  position: relative;
+  width: 100%;
+
+  p.is-empty {
+    display: block;
+  }
+
+  p:has(img) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .image-tiptap {
+      width: 20rem;
+      height: auto;
+    }
+  }
+
+  ul,
+  ol {
+    margin: 0.8em 0;
+    padding: 0 0 0 2em;
+
+    li {
+      > ul,
+      > ol {
+        margin: 0;
+      }
+
+      p {
+        display: inline;
+        margin: 0;
+      }
+    }
+  }
+
+  ul[data-type='taskList'] {
+    list-style: none;
+    margin: 0.8em 0;
+    padding: 0 0 0 0.9em;
+
+    li {
+      display: flex;
+
+      > label {
+        flex: 0 0 auto;
+        margin-right: 0.5em;
+        user-select: none;
+      }
+
+      > div {
+        flex: 1 1 auto;
+      }
+    }
+
+    input[type='checkbox'] {
+      cursor: pointer;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    line-height: 1.1;
+  }
+
+  p {
+    margin: 0.8em 0;
+  }
+
+  code {
+    background: rgba(#616161, 0.1);
+    color: #616161;
+    border: 1px solid rgba(#808080, 0.3);
+    border-radius: 3px;
+    padding: 1px;
+  }
+
+  pre {
+    color: #24292e;
+    background: #f5f7f9;
+    font-family: 'ui-monospace', 'SFMono-Regular', 'SF Mono', Menlo, Consolas,
+      'Liberation Mono', monospace;
+    padding: 0.75rem 1rem;
+    border-radius: 0.5rem;
+
+    code {
+      color: inherit;
+      padding: 0;
+      background: none;
+      font-size: 0.8rem;
+      border: none;
+    }
+  }
+
+  blockquote {
+    padding-left: 1rem;
+    border-left: 2px solid rgba(#0d0d0d, 0.1);
+  }
+
+  hr {
+    border: none;
+    border-top: 2px solid rgba(#0d0d0d, 0.1);
+    margin: 1.5rem 0;
+  }
+
+  span[data-mention] {
+    background-color: rgba(#005d71, 0.15);
+    box-decoration-break: clone;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border-radius: 4px;
+    padding: 2px 4px;
+    color: #005d71;
+
+    > .char {
+      display: inline-block;
+      vertical-align: top;
+      margin: 1px 2px 0 0;
+      color: #0098b8;
+    }
+  }
+
+  span[data-emoji-suggestion],
+  span[data-emoji-replacer] {
+    > img {
+      width: 1.1em;
+      height: 1.1em;
+      margin: 0 0.05em;
+      vertical-align: -0.25em;
+    }
+  }
+
+  p.is-editor-empty:first-child::before {
+    content: attr(data-placeholder);
+    float: left;
+    color: rgba(#111111, 0.3);
+    pointer-events: none;
+    height: 0;
+    font-style: italic;
+  }
+
+  .color {
+    white-space: nowrap;
+
+    &::before {
+      content: ' ';
+      display: inline-block;
+      width: 0.8em;
+      height: 0.8em;
+      border: 1px solid rgba(#808080, 0.3);
+      vertical-align: middle;
+      margin-right: 0.2em;
+      margin-bottom: 0.15em;
+      border-radius: 50%;
+      background: var(--color);
+    }
+  }
+
+  /*!
+    Theme: GitHub
+    Description: Light theme as seen on github.com
+    Author: github.com
+    Maintainer: @Hirse
+    Updated: 2021-05-15
+    Outdated base version: https://github.com/primer/github-syntax-light
+    Current colors taken from GitHub's CSS
+  */
+
+  .hljs {
+    color: #24292e;
+    background: #ffffff;
+  }
+
+  .hljs-doctag,
+  .hljs-keyword,
+  .hljs-meta .hljs-keyword,
+  .hljs-template-tag,
+  .hljs-template-variable,
+  .hljs-type,
+  .hljs-variable.language_ {
+    /* prettylights-syntax-keyword */
+    color: #d73a49;
+  }
+
+  .hljs-title,
+  .hljs-title.class_,
+  .hljs-title.class_.inherited__,
+  .hljs-title.function_ {
+    /* prettylights-syntax-entity */
+    color: #6f42c1;
+  }
+
+  .hljs-attr,
+  .hljs-attribute,
+  .hljs-literal,
+  .hljs-meta,
+  .hljs-number,
+  .hljs-operator,
+  .hljs-variable,
+  .hljs-selector-attr,
+  .hljs-selector-class,
+  .hljs-selector-id {
+    /* prettylights-syntax-constant */
+    color: #005cc5;
+  }
+
+  .hljs-regexp,
+  .hljs-string,
+  .hljs-meta .hljs-string {
+    /* prettylights-syntax-string */
+    color: #032f62;
+  }
+
+  .hljs-built_in,
+  .hljs-symbol {
+    /* prettylights-syntax-variable */
+    color: #e36209;
+  }
+
+  .hljs-comment,
+  .hljs-code,
+  .hljs-formula {
+    /* prettylights-syntax-comment */
+    color: #6a737d;
+  }
+
+  .hljs-name,
+  .hljs-quote,
+  .hljs-selector-tag,
+  .hljs-selector-pseudo {
+    /* prettylights-syntax-entity-tag */
+    color: #22863a;
+  }
+
+  .hljs-subst {
+    /* prettylights-syntax-storage-modifier-import */
+    color: #24292e;
+  }
+
+  .hljs-section {
+    /* prettylights-syntax-markup-heading */
+    color: #005cc5;
+    font-weight: bold;
+  }
+
+  .hljs-bullet {
+    /* prettylights-syntax-markup-list */
+    color: #735c0f;
+  }
+
+  .hljs-emphasis {
+    /* prettylights-syntax-markup-italic */
+    color: #24292e;
+    font-style: italic;
+  }
+
+  .hljs-strong {
+    /* prettylights-syntax-markup-bold */
+    color: #24292e;
+    font-weight: bold;
+  }
+
+  .hljs-addition {
+    /* prettylights-syntax-markup-inserted */
+    color: #22863a;
+    background-color: #f0fff4;
+  }
+
+  .hljs-deletion {
+    /* prettylights-syntax-markup-deleted */
+    color: #b31d28;
+    background-color: #ffeef0;
+  }
+
+  .hljs-char.escape_,
+  .hljs-link,
+  .hljs-params,
+  .hljs-property,
+  .hljs-punctuation,
+  .hljs-tag {
+    /* purposely ignored */
+  }
+}
+
+.editor-mini .ProseMirror {
+  padding-top: 8px;
+}
+
+.yt-backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}

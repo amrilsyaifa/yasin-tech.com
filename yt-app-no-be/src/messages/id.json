@@ -1,0 +1,234 @@
+{
+  "Home": {
+    "hello": "Hallo dunia!",
+    "translation": {
+      "en": "English",
+      "id": "Indonesia"
+    },
+    "navbar": {
+      "top_navbar": {
+        "auth": {
+          "help": "bantuan",
+          "contact": "hubungi kami",
+          "home": "beranda"
+        },
+        "home": {
+          "home": "Beranda",
+          "products": "produk",
+          "articles": "Artikel",
+          "about": "Tentang Kami",
+          "contact": "Kontak",
+          "service": "melayani",
+          "sign_in": "masuk"
+        }
+      }
+    },
+    "pages": {
+      "login": {
+        "welcome": "Selamat Datang!",
+        "dont_have_account": "Belum punya akun,",
+        "sign_up": "Daftar",
+        "remember_me": "Ingatkan saya",
+        "forget_password": "Lupa password?",
+        "label_email": "Email kamu",
+        "label_password": "Password kamu",
+        "submit": "Proses",
+        "continue_with": "atau menggunakan",
+        "toast": {
+          "success": "Berhasil Masuk",
+          "error": "Gagal Masuk"
+        }
+      },
+      "register": {
+        "create_account": "Buat akun",
+        "have_account": "Sudah punya akun,",
+        "sign_in": "Masuk",
+        "label_email": "Masukkan email",
+        "label_password": "Masukkan password",
+        "label_confirm_password": "Masukkan password konfirmasi",
+        "label_username": "Masukkan username",
+        "label_first_name": "Masukkan nama depan",
+        "label_last_name": "Masukkan nama akhir",
+        "label_phone_number": "Masukkan nomor telepon",
+        "submit": "Proses",
+        "sign_up": "Daftar",
+        "continue_with": "atau menggunakan",
+        "toast": {
+          "success": "Berhasil membuat akun",
+          "error": "Gagal membuat akun"
+        }
+      },
+      "logout": {
+        "toast": {
+          "success": "Berhasil Keluar",
+          "error": "Gagal Keluar"
+        }
+      },
+      "forgot_password": {
+        "forgot_password": "Lupa password",
+        "description": "Ups, jangan khawatir tim kami akan membantu Anda untuk masuk kembali, Masukkan alamat email Anda untuk memperbaiki masalah ini.",
+        "label_email": "Masukkan email",
+        "submit": "Kirim"
+      },
+      "home": {
+        "hero": {
+          "title": "Inovasi Digital dengan",
+          "description": "Mempercepat inovasi digital melalui captive perusahaan & pasar potensial. Misi kami adalah membantu perusahaan untuk memanfaatkan pasar, orang, dan sumber daya yang ada untuk menciptakan terobosan produk digital, lebih cepat.",
+          "discover": "Temukan"
+        },
+        "feature": {
+          "title": "Kami membantu Anda membuka potensi sejati bisnis Anda dengan solusi kami yang modern, aman, dan andal.",
+          "description": "Anda dapat menjelajahi fitur-fitur yang kami sediakan dengan menyenangkan dan memiliki fungsi masing-masing fitur.",
+          "list": {
+            "1": "Pengembangan web",
+            "2": "Pengembangan aplikasi mobile",
+            "3": "Desain UI/UX",
+            "4": "CCTV & Solusi IT",
+            "5": "Solusi Jaringan",
+            "6": "24/7 Layanan dukungan"
+          }
+        },
+        "show_case": {
+          "title": "Keterlibatan Kami",
+          "description": "Yang dapat kami tunjukkan"
+        },
+        "insight": {
+          "title": "Wawasan",
+          "description": "Diinformasikan, Terinspirasi"
+        },
+        "call_support": {
+          "message": "Hi Yasin Tech, Saya ingin konsultasi"
+        }
+      },
+      "articles": {
+        "hero": {
+          "title": "Buat dirimu relax",
+          "description": "Di blog ini saya berbagi tips dan trik, framework, project, tutorial, dll. Pastikan Anda login untuk mendapatkan update terbaru",
+          "start_reading": "Mulai membaca"
+        }
+      },
+      "service": {
+        "title": "Bidang Keahlian kami adalah Pengembangan Web Modern dan Aplikasi Seluler",
+        "description": "Kami mengembangkan web khusus, aplikasi seluler, dan antarmuka pengguna menggunakan React JS, React Native, Nodejs dan Golang, yang melayani kebutuhan spesifik klien.",
+        "our_skill_include": "Keahlian kami meliputi",
+        "list": {
+          "title": {
+            "1": "Web Development",
+            "2": "Mobile Development",
+            "3": "UI/UX Design",
+            "4": "CCTV & IT Solution",
+            "5": "Network Solution",
+            "6": "24/7 Support Service"
+          },
+          "description": {
+            "1": "Bergabunglah dengan liga aplikasi web terkemuka. Tim pengembang kami dengan keahlian mereka yang tak tertandingi dalam Nodejs, Golang, dan React akan membantu Anda merancang struktur yang tangguh untuk membawa bisnis Anda ke tingkat yang lebih tinggi.",
+            "2": "Semua aplikasi Anda dibangun di Nodejs, Golang, dan React Native memungkinkan Anda memerintahkan perubahan dengan lancar untuk iOS dan Android secara bersamaan sambil memangkas biaya pengembangan dan pemeliharaan dalam jangka panjang.",
+            "3": "Desain yang baik meningkatkan pengalaman pengguna dan mendorong tujuan komersial. Dengan memanfaatkan pengujian A/B dan analisis metrik utama dari proyek yang kami terapkan, kami memberikan pengalaman luar biasa sekaligus mempercepat kinerja bisnis.",
+            "4": "Dengan tim profesional menggunakan konsep pemasangan yang baik dan cepat, serta menggunakan CCTV terbaik. Kami menggunakan CCTV dan kabel yang berkualitas sehingga CCTV dapat digunakan dalam jangka waktu lama.",
+            "5": "Kami memiliki tim profesional yang berpengalaman dalam mengerjakan proyek skala besar dengan routing statis dan dinamis RIP (Routing Information Protocol), IGRP (Internal Gateway Routing Protocol), OSPF (Open Shortest Path First), EIGRP (Enhanced Internal Gateway Routing Protocol), BGP (Border Gateway Protocol)",
+            "6": "Layanan 24/7 ini kami berikan untuk membantu klien ketika ada masalah yang harus diselesaikan secepatnya. agar bisnis klien tetap berjalan dengan baik"
+          },
+          "skill_include": {
+            "react": "React",
+            "golang": "Golang",
+            "nodejs": "Nodejs",
+            "react_native": "React Native",
+            "mikrotik": "Mikrotik",
+            "cisco": "Cisco",
+            "cctv": "CCTV",
+            "hk": "Hikvision",
+            "dahua": "Dahua",
+            "tp_link": "TP Link",
+            "product_design": "Product Design Mpv",
+            "design": "Web and Mobile Design",
+            "service": "service 24/7"
+          }
+        }
+      }
+    }
+  },
+  "Dashboard": {
+    "common": {
+      "dashboard": "Beranda",
+      "content": "Konten",
+      "profile": "Profil",
+      "settings": "Pengaturan",
+      "sign_out": "Keluar",
+      "create": "Tulis",
+      "edit": "Ubah",
+      "testimony": "Testimonio"
+    },
+    "content": {
+      "empty_state": {
+        "title": "Tidak ada hasil",
+        "description": "Maaf, tidak ada hasil untuk ditampilkan. Silakan buat data terlebih dahulu"
+      },
+      "create": {
+        "title": "Tambah",
+        "write": "Tulis",
+        "form": {
+          "title": "Judul...",
+          "description": "Deskripsi...",
+          "preview": "Pratinjau",
+          "save": "Simpan",
+          "publish": "Terbitkan"
+        },
+        "toast": {
+          "success": "Berhasil menambah data",
+          "error": "Gagal menambah data"
+        }
+      },
+      "edit": {
+        "title": "Ubah",
+        "toast": {
+          "success": "Berhasil mengubah data",
+          "error": "Gagal mengubah data"
+        }
+      }
+    },
+    "testimony": {
+      "create": {
+        "form": {
+          "full_name": "Nama Lengkap",
+          "company": "Perusahaan",
+          "job_title": "Jabatan",
+          "desc_id": "Deskripsi (ID)",
+          "desc_en": "Deskripsi (EN)",
+          "rating": "Nilai",
+          "placeholder_desc": "Tulis pemikiran kamu di sini...",
+          "save": "Simpan",
+          "publish": "Terbitkan"
+        }
+      },
+      "edit": {
+        "toast": {
+          "success": "Berhasil mengubah data",
+          "error": "Gagal mengubah data"
+        }
+      }
+    }
+  },
+  "Components": {
+    "coming_soon": {
+      "title": "Segera Hadir",
+      "description": "Beritahu saya jika sudah selesai",
+      "subscribe": "Langganan"
+    },
+    "modal": {
+      "modal_editor": {
+        "cancel": "Batal",
+        "ok": "Masukkan"
+      }
+    },
+    "rich_editor": {
+      "error_upload_image": "Terjadi kesalahan saat upload gambar"
+    }
+  },
+  "LocaleLayout": {
+    "title": "Yasin Tech",
+    "company": "PT. Yasin Tech Indonesia",
+    "address": "Jl. Sei mencirim, Medan, Sumatera Utara",
+    "description": "Jasa Pembuatan Website, Jasa Pembuatan Android, Jasa Pemasangan dan Pemasangan CCTV dan IT Solution",
+    "meaning": "dibentuk pada tahun 2015 sebagai perusahaan solusi IT untuk bisnis. Tujuan kami adalah untuk memberikan layanan yang terjangkau dan menjadi mitra terpercaya bagi klien kami dalam mencapai tujuan bisnis mereka."
+  }
+}
