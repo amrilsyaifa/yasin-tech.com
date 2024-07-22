@@ -18,6 +18,19 @@ export async function middleware(req: NextRequest) {
 
   // Check if there is any supported locale in the pathname
   const pathname = req.nextUrl.pathname;
+
+  // Check if the request is for the apple-app-site-association file
+  if (pathname === '/.well-known/apple-app-site-association') {
+    // Fetch the file from the public directory
+    const url = new URL(`/public${pathname}`, req.url);
+    const response = NextResponse.rewrite(url);
+
+    // Set the Content-Type header to application/json
+    response.headers.set('Content-Type', 'application/json');
+
+    return NextResponse.next();
+  }
+
   const pathnameIsMissingLocale = locales.every(
     (locale) => !pathname.startsWith(`/${locale}/`) && pathname !== `/${locale}`
   );
@@ -66,5 +79,8 @@ export async function middleware(req: NextRequest) {
 }
 
 export const config = {
-  matcher: ['/((?!api|_next/static|_next/image|favicon.ico).*)'],
+  matcher: [
+    '/.well-known/apple-app-site-association',
+    '/((?!api|_next/static|_next/image|favicon.ico).*)',
+  ],
 };
