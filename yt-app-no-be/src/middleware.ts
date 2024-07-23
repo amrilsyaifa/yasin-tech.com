@@ -20,7 +20,10 @@ export async function middleware(req: NextRequest) {
   const pathname = req.nextUrl.pathname;
 
   // Check if the request is for the apple-app-site-association file
-  if (pathname === '/.well-known/apple-app-site-association') {
+  if (
+    pathname === '/.well-known/apple-app-site-association' ||
+    pathname === '/.well-known/assetlinks.json'
+  ) {
     // Fetch the file from the public directory
     const url = new URL(`/public${pathname}`, req.url);
     const response = NextResponse.rewrite(url);

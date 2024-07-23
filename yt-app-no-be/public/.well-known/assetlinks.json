@@ -1,0 +1,12 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.sosomall",
+      "sha256_cert_fingerprints": [
+        "59:AA:70:35:CB:56:8D:CD:97:A7:E7:95:5E:EB:59:14:5D:75:92:3C:2B:55:F0:16:9F:30:39:CA:05:DD:F9:86"
+      ]
+    }
+  }
+]
